@@ -7,6 +7,6 @@ The solutions ar ein the order:
 1. Super Mega Bot (SMB) simulation with `teleop_twist_keyboard` and `roslaunch`: [smb_ws](smb_ws/)
 
 
-The explanation for each sheet is provided in a separate README file in each folder. 
+The explanation for each sheet is provided in a separate README file in each folder. As explained in the course, it is assumed that you have a `git` folder, from where you create symlinks in your workspace folder.
 
 This is a work in progress and will be update as I complete more solution sheets.
