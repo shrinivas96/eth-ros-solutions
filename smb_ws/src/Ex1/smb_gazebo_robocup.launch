@@ -1,0 +1,13 @@
+<launch>
+    <arg name="worlds_path"         default="/usr/share/gazebo-11/worlds" />
+    <arg name="world"               default="robocup14_spl_field" />
+    <!-- <arg name="world_file"          default="$(find smb_gazebo)/worlds/$(arg world).world" /> -->
+    <arg name="world_file"          default="$(arg worlds_path)/$(arg world).world" />
+    
+
+    <include file="$(find smb_gazebo)/launch/smb_gazebo.launch">
+        <arg name="world_file"      value="$(arg world_file)" />
+    </include>
+
+    <node name="teleop" pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" />
+</launch>
